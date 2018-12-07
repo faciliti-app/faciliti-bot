@@ -1,0 +1,33 @@
+{
+  "name": "faciliti-bot",
+  "version": "1.0.0",
+  "description": "Bot responsável por pegar a planilha de empregos do site da prefeitura do recife.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index --time=2",
+    "production": "node index --time=600"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faciliti-app/faciliti-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faciliti-app/faciliti-bot/issues"
+  },
+  "homepage": "https://github.com/faciliti-app/faciliti-bot#readme",
+  "dependencies": {
+    "bluebird": "^3.5.3",
+    "cheerio": "^1.0.0-rc.2",
+    "date-and-time": "^0.6.3",
+    "firebase": "^5.7.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "node-fetch": "^2.3.0",
+    "request": "^2.88.0",
+    "xlsx": "^0.14.1",
+    "yargs": "^12.0.5"
+  }
+}
