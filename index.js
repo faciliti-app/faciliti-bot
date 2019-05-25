@@ -118,12 +118,11 @@ setInterval(function(){
     let now = new Date();
     var hoje = date.format(now, 'DD-MM-YYYY');
     var fileName = "emprego"+hoje+".xlsx";
-    console.log('ads');
     request('http://www2.recife.pe.gov.br/taxonomy/term/8430/', function(err, resp, html) {
         if (!err){
             const $ = cheerio.load(html);
             var strong = $('strong');
-            var site = strong[0].parent.attribs.href
+            var site = strong[0].children[0].attribs.href;
             http.get(site, function(response) {
                 var file = fs.createWriteStream(fileName);
                 response.pipe(file).on('finish', function () {
@@ -131,6 +130,7 @@ setInterval(function(){
                 });
             });
         }else{
+            console.log('erro');
         }
     });
-}, loopTime * 1000);
+}, loopTime * 10000);
