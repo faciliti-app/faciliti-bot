@@ -21,7 +21,7 @@
   "dependencies": {
     "bluebird": "^3.5.3",
     "cheerio": "^1.0.0-rc.2",
-    "date-and-time": "^0.6.3",
+    "date-and-time": "^0.14.2",
     "firebase": "^5.7.0",
     "fs": "0.0.1-security",
     "http": "0.0.0",
