@@ -25,7 +25,7 @@
     "firebase": "^5.7.0",
     "fs": "0.0.1-security",
     "http": "0.0.0",
-    "node-fetch": "^2.3.0",
+    "node-fetch": "^3.1.1",
     "request": "^2.88.0",
     "xlsx": "^0.14.1",
     "yargs": "^12.0.5"
